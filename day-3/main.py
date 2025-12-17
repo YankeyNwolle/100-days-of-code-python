@@ -51,21 +51,20 @@ elif first_step == "gauche":
     second_step = input("Tape manger ou dormir \n manger/dormir : ").lower()
     if second_step == "dormir":
         print("vous perdez cette manche !!!!")
+        
     elif second_step == "manger":
+        third_step = int(input("Tape entre 1 ou 2 \n 1/2"))
+        if third_step == 1:
+            print("vous perdez cette manche !!!")
+        elif third_step == 2:
+            print("Bravo vous avez remporté le trésor 🚀")
+        else:
+            print("veuillez entrez le bon chiffre 🦥")
+            third_step = int(input("Tape entre 1 ou 2 \n 1/2"))
         print("Bien joué vous avez terminez les 2/3 du trésor 🎉")
     else:
         print("veuillez entrez le bon mot  🌚")
         second_step = input("Tape manger ou dormir \n manger/dormir : ").lower()
-
-
-    third_step = int(input("Tape entre 1 ou 2 \n 1/2"))
-    if third_step == 1:
-        print("vous perdez cette manche !!!")
-    elif third_step == 2:
-        print("Bravo vous avez remporté le trésor 🚀")
-    else:
-        print("veuillez entrez le bon chiffre 🦥")
-        third_step = int(input("Tape entre 1 ou 2 \n 1/2"))
 
 
 else:
